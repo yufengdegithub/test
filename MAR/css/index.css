@@ -1,0 +1,115 @@
+
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;list-style:none;}
+img{ border:none;}
+.clear{ clear:both;}
+ul li{ list-style:none;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+html,body{ font:12px '微软雅黑',Arial, Helvetica, sans-serif; }
+/*index*/
+#topbox{ width:970px; height:60px;margin:20px auto 0;display:block;}
+#top{ width:960px; height:60px; margin:0 auto;}
+.topnav ul{width:100%;}
+.topnav li{ float:left; width:150px;height:60px;line-height:36px;margin:0 5px;text-align:center;font-size:20px; background:#f18eba;color:#fff; }
+.topnav li span{ display:block; text-align:center; font:14px Arial, Helvetica, sans-serif;}
+
+.btn1 a span{color:#525252;}  
+.btn2 a span{color:#fff;background:#660000;} 
+.btn2 {color:#fff;background:#f69;}
+.btn3 a span{color:#fff;}  
+.btn4 a span{color:#f0388b;font-size:26px;-webkit-text-shadow:4px 4px 3px #f0388b;-moz-text-shadow: 4px 4px 3px #f0388b; text-shadow: 4px 4px 3px #f0388b;} 
+
+#containerbody{ width:100%;margin:10px auto 0;height:auto;z-index:100; background:#fff;}
+.servicebtnbox{border-bottom:1px solid #ccc;}
+.servicebtnbox-main{ width:960px;height:30px;margin:0 auto;}
+.servicebtnbox p{float:right;}
+#header{ width:960px;height:120px;margin:0 auto;}
+.logocontainer{float:left; width:200px;height:90px;margin-top:10px; }
+.logo{ float:left;width:120px;height:90px;}
+.logo img{width:100%;}
+
+.navcontainer{float:right; width:720px; height:100px;}
+#lavalampnav{ display:block;width:720px; margin:0 auto; height:100px; position:relative;}
+#lavalampnav ul{ margin-left:0 auto;width:720px;height:100px;}
+#lavalampnav li{ float:left;display:inline-block; width:100px;height:100px;margin-left:20px;text-align:center; font:12px Arial, Helvetica, sans-serif; }
+#lavalampnav li a{width:100%;height:100px;line-height:100px;}
+#lavalampnav #currentnav,#lavalampnav li a{ color:#a09f9f; text-decoration:none;position:relative; z-index:200;width:100px;text-align:center;}
+#lavalampnav #currentnav span,#lavalampnav li a span{height:70px;margin-top:10px;padding-top:20px;font:20px '微软雅黑','宋体',Arial, Helvetica, sans-serif;text-align:center; display:block;}
+#lavalampnav li a p{font-size:14px;}
+#lavalampnav li a:hover span{ color:#fff;background:#660000;}
+#lavalampnav li:hover{background-color:#f69;}
+#clear{clear:both;}
+
+
+/* 轮播图片 */
+@media screen and (max-width:10000px){    
+ #flash{width:1500px;margin:0 auto;height:600px;position: relative;cursor: pointer;}
+ #pic img{width:100%;height:550px;}
+ .arrow{top:205px;}
+}
+@media screen and (max-width:1391px){    
+ #flash{width:100%;margin:0 auto;height:550px;position: relative;cursor: pointer;}
+ #pic img{width:100%;height:550px;}
+ .arrow{top:205px;}
+}
+@media screen and (max-width:1024px){    
+ #flash{width:100%;margin:0 auto;height:400px;position: relative;cursor: pointer;}
+ #pic img{width:100%;height:400px;}
+ .arrow{top:130px;}
+}
+
+a{text-decoration: none;color: #fff;}
+/*#flash{width:100%;margin:0 auto;height:400px;position: relative;cursor: pointer;}*/
+#pic li{width:100%;position: absolute;top: 0;left: 0;z-index: 1;display: none;}
+#num{position: absolute;left:50%;transform: translateX(-50%);bottom: 10px;z-index: 2;cursor:default;}
+#num li{float: left;width: 14px;height: 14px;border-radius: 50%;margin: 10px;line-height: 20px;text-align: center;color: #fff;border:1px solid #fff;cursor: pointer;}
+#num li.active{background: #fff;}
+.arrow{height: 140px;width: 50px;font-size:80px;line-height: 140px;text-align: center;display: block;position: absolute;z-index: 3;display: none;}
+.arrow:hover{background: rgba(0,0,0,0.1);}
+#flash:hover .arrow{display: block;}
+#left{left: 4%;}
+#right{right: 4%;}
+
+
+
+/* case */
+#main {width:960px;margin:20px auto;position:relative;}
+#main .dress-nav1{float:left;width:130px;height:0px;margin-left:5px;border-bottom: 41px solid #660000;  border-right: 20px solid transparent;text-align:center;color:#fff;font:24px '微软雅黑',Arial, Helvetica, sans-serif;line-height:40px;}
+#main .dress-nav2{float:left;width:800px;height:40px;border-bottom:1px solid #660000;}
+#main li span{float:left;width:100px;height:40px;line-height:40px;color:#aeb1b0;text-align:center;}
+#main .dress-nav2 a{float:right;width:100px;height:40px;line-height:40px;color:#aeb1b0;text-align:left;}
+#main .case1-show ul{width:960px;margin:10px auto;}
+#main .case1-show li{float:left;width:240px;height:360px;}
+#main .case1-show img{width:230px;height:350px;margin:5px;}
+#main .case2-show img{width:100%;height:100%;}
+
+#main .case2-show ul{margin-top:15px;margin-left:2px;}
+#main .case2-show .item1{float:left;width:554px;height:366px;margin:2px;}
+#main .case2-show .item2{float:left;width:194px;height:166px;margin:2px;}
+#main .case2-show .item3{float:left;width:196px;height:166px;margin:2px;}
+#main .case2-show .item4{float:left;width:394px;height:196px;margin:2px;}
+#main .case2-show .item5{float:left;width:424px;height:196px;margin:2px;}
+#main .case2-show .item6{float:left;width:524px;height:196px;margin:2px;}
+
+/* footer */
+#footer{width:100%;background-color:#2c2c2c;border-top:10px solid #f28fb9;}
+#footer-main{width:960px;height:200px;margin:0 auto;background-color:#2c2c2c;}
+#footer-nav{float:left;width:620px;height:200px;}
+#footer-nav ul{float:left;width:150px;height:200px;}
+#footer-nav ul h2{width:150px;height:40px;margin-top:40px;color:#fff;}
+#footer-nav li {display:inline-block; width:150px;height:30px;font:14px Arial, Helvetica, sans-serif; }
+#footer-nav li a{width:100%;text-decoration:none;color:#fff;font:14px '微软雅黑',Arial, Helvetica, sans-serif;}
+.clear{clear:both;}
+
+#footer-info{float:right;width:330px;height:150px;margin-top:40px;}
+#footer-info ul{width:300px;height:150px;margin:0 auto;}
+#footer-info li{float:left;width:120px;height:120px;margin:0 15px;}
+#footer-info #weichat ,#footer-info #weibo {width:120px;height:120px;}
+#footer-info #weichat img,#footer-info #weibo img{width:120px;height:120px;}
+#footer-info #weichat span,#footer-info #weibo span {font-size:14px;height:20px;line-height:20px;}
+#footer-info #weichat p img,#footer-info #weibo p img{float:left;width:20px;height:20px;margin-left:10px;}
+#adress{width:100%;height:40px;background: #232323;}
+#adress p{text-align:center;line-height:40px;color:#fff;}
