@@ -28,7 +28,7 @@
       }
       //鼠标离开窗口，开启计时器
       flash.onmouseout=function(){
-        timer=setInterval(run,2000)
+        timer=setInterval(run,5000)
       }
       //鼠标划在页签上面，停止计时器，手动切换
       for(var i=0;i<num.length;i++){
@@ -39,7 +39,7 @@
         }
       }    
       //定义计时器
-      timer=setInterval(run,2000)
+      timer=setInterval(run,5000)
       //封装函数run
       function run(){
         index++;

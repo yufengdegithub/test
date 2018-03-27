@@ -8,7 +8,7 @@ ul li{ list-style:none;}
 .fl{ float:left;}
 .fr{ float:right;}
 
-html,body{ font:12px '微软雅黑',Arial, Helvetica, sans-serif; }
+html,body{ font:12px '宋体',Arial, Helvetica, sans-serif; }
 /*index*/
 #topbox{ width:970px; height:60px;margin:20px auto 0;display:block;}
 #top{ width:960px; height:60px; margin:0 auto;}
@@ -17,8 +17,8 @@ html,body{ font:12px '微软雅黑',Arial, Helvetica, sans-serif; }
 .topnav li span{ display:block; text-align:center; font:14px Arial, Helvetica, sans-serif;}
 
 .btn1 a span{color:#525252;}  
-.btn2 a span{color:#fff;background:#660000;} 
-.btn2 {color:#fff;background:#f69;}
+.btn2 a span{color:#660000;} 
+.btn2 {color:#fff;}
 .btn3 a span{color:#fff;}  
 .btn4 a span{color:#f0388b;font-size:26px;-webkit-text-shadow:4px 4px 3px #f0388b;-moz-text-shadow: 4px 4px 3px #f0388b; text-shadow: 4px 4px 3px #f0388b;} 
 
@@ -26,8 +26,9 @@ html,body{ font:12px '微软雅黑',Arial, Helvetica, sans-serif; }
 .servicebtnbox{border-bottom:1px solid #ccc;}
 .servicebtnbox-main{ width:960px;height:30px;margin:0 auto;}
 .servicebtnbox p{float:right;}
-#header{ width:960px;height:120px;margin:0 auto;}
+#header{ width:960px;height:130px;margin:0 auto;}
 .logocontainer{float:left; width:200px;height:90px;margin-top:10px; }
+.logocontainer p{font:18px '微软雅黑',Arial, Helvetica, sans-serif;text-align:center;color:#660000;}
 .logo{ float:left;width:120px;height:90px;}
 .logo img{width:100%;}
 
@@ -37,10 +38,10 @@ html,body{ font:12px '微软雅黑',Arial, Helvetica, sans-serif; }
 #lavalampnav li{ float:left;display:inline-block; width:100px;height:100px;margin-left:20px;text-align:center; font:12px Arial, Helvetica, sans-serif; }
 #lavalampnav li a{width:100%;height:100px;line-height:100px;}
 #lavalampnav #currentnav,#lavalampnav li a{ color:#a09f9f; text-decoration:none;position:relative; z-index:200;width:100px;text-align:center;}
-#lavalampnav #currentnav span,#lavalampnav li a span{height:70px;margin-top:10px;padding-top:20px;font:20px '微软雅黑','宋体',Arial, Helvetica, sans-serif;text-align:center; display:block;}
+#lavalampnav #currentnav span,#lavalampnav li a span{height:70px;margin-top:10px;padding-top:20px;font:18px '微软雅黑','宋体',Arial, Helvetica, sans-serif;text-align:center; display:block;}
 #lavalampnav li a p{font-size:14px;}
-#lavalampnav li a:hover span{ color:#fff;background:#660000;}
-#lavalampnav li:hover{background-color:#f69;}
+/*#lavalampnav li a:hover span{ color:#fff;background:#660000;}
+#lavalampnav li:hover{background-color:#f69;}*/
 #clear{clear:both;}
 
 
@@ -77,13 +78,20 @@ a{text-decoration: none;color: #fff;}
 
 /* case */
 #main {width:960px;margin:20px auto;position:relative;}
-#main .dress-nav1{float:left;width:130px;height:0px;margin-left:5px;border-bottom: 41px solid #660000;  border-right: 20px solid transparent;text-align:center;color:#fff;font:24px '微软雅黑',Arial, Helvetica, sans-serif;line-height:40px;}
+#main .dress-nav1{float:left;width:130px;height:0px;margin-left:5px;border-bottom: 41px solid #660000;  border-right: 20px solid transparent;text-align:center;color:#fff;font:24px '宋体',Arial, Helvetica, sans-serif;line-height:40px;}
 #main .dress-nav2{float:left;width:800px;height:40px;border-bottom:1px solid #660000;}
-#main li span{float:left;width:100px;height:40px;line-height:40px;color:#aeb1b0;text-align:center;}
+#main li span{float:left;width:100px;height:40px;line-height:40px;font-size:16px;color:#aeb1b0;text-align:center;}
 #main .dress-nav2 a{float:right;width:100px;height:40px;line-height:40px;color:#aeb1b0;text-align:left;}
+#main .dress-nav2 a img{float:right;margin-right:0px;}
 #main .case1-show ul{width:960px;margin:10px auto;}
-#main .case1-show li{float:left;width:240px;height:360px;}
+#main .case1-show li{float:left;width:240px;height:360px;position:relative;}
 #main .case1-show img{width:230px;height:350px;margin:5px;}
+
+#main .case1-show .Bg{width:230px;height:50px;margin:-58px 5px 0;color:#fff;overflow:hidden;background:#6f6f70;filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity: 0.6; opacity: 0.6;position:absolute;z-index:55;}
+#main .case1-show .Bg h2{height:50px;line-height:50px;font-size:24px;text-align:center;}
+#main .case1-show .Bg p{width:90%;height:28px;margin:0 auto;line-height:28px;text-indent:2em;font-size:14px;}
+#main .case1-show .Bg:hover{height:300px;margin:-358px 5px 0;padding-top:50px;}
+
 #main .case2-show img{width:100%;height:100%;}
 
 #main .case2-show ul{margin-top:15px;margin-left:2px;}
@@ -94,6 +102,21 @@ a{text-decoration: none;color: #fff;}
 #main .case2-show .item5{float:left;width:424px;height:196px;margin:2px;}
 #main .case2-show .item6{float:left;width:524px;height:196px;margin:2px;}
 
+#exhibition-main{width:960px;margin:20px auto;position:relative;}
+#exhibition-main .dress-nav1{float:left;width:130px;height:0px;margin-left:5px;border-bottom: 41px solid #660000;  border-right: 20px solid transparent;text-align:center;color:#fff;font:24px '微软雅黑',Arial, Helvetica, sans-serif;line-height:40px;}
+#exhibition-main .dress-nav2{float:left;width:800px;height:40px;border-bottom:1px solid #660000;}
+#exhibition-main li span{float:left;width:100px;height:40px;line-height:40px;color:#aeb1b0;text-align:center;}
+#exhibition-main .dress-nav2 a{float:right;width:100px;height:40px;line-height:40px;color:#aeb1b0;text-align:left;}
+#exhibition-main .dress-nav2 a img{float:right;margin-right:0px;}
+#exhibition-main .case2-show ul{width:960px;margin:10px auto;}
+#exhibition-main .case2-show li{float:left;width:320px;margin-top:10px;}
+#exhibition-main .case2-show li:hover{-webkit-box-shadow:1px 1px 1px #6b6b6d;-moz-box-shadow: 1px 1px 1px #6b6b6d; box-shadow: 1px 1px 2px #6b6b6d;}
+#exhibition-main .case2-show h3{width:300px;margin:5px 10px;color:#000;}
+#exhibition-main .case2-show p{width:300px;margin:5px 10px;color:#000;}
+#exhibition-main .case2-show img{width:310px;height:220px;margin:5px;}
+
+
+
 /* footer */
 #footer{width:100%;background-color:#2c2c2c;border-top:10px solid #f28fb9;}
 #footer-main{width:960px;height:200px;margin:0 auto;background-color:#2c2c2c;}
@@ -101,7 +124,7 @@ a{text-decoration: none;color: #fff;}
 #footer-nav ul{float:left;width:150px;height:200px;}
 #footer-nav ul h2{width:150px;height:40px;margin-top:40px;color:#fff;}
 #footer-nav li {display:inline-block; width:150px;height:30px;font:14px Arial, Helvetica, sans-serif; }
-#footer-nav li a{width:100%;text-decoration:none;color:#fff;font:14px '微软雅黑',Arial, Helvetica, sans-serif;}
+#footer-nav li a{width:100%;text-decoration:none;color:#fff;font:14px '宋体',Arial, Helvetica, sans-serif;}
 .clear{clear:both;}
 
 #footer-info{float:right;width:330px;height:150px;margin-top:40px;}
